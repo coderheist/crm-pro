@@ -14,10 +14,10 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Workaround for OneDrive permission issues
-  outputFileTracingRoot: process.cwd(),
-  // Custom build directory to avoid OneDrive sync issues
-  distDir: '.next-build',
+  // Only use custom distDir for local development on Windows/OneDrive
+  ...(process.env.NODE_ENV === 'development' && process.platform === 'win32' && {
+    distDir: '.next-build',
+  }),
 }
 
 export default nextConfig
