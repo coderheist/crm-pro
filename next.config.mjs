@@ -1,10 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   serverExternalPackages: ['mongodb'],
-  env: {
-    MONGODB_URI: process.env.MONGODB_URI,
-    JWT_SECRET: process.env.JWT_SECRET,
-  },
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -17,7 +13,8 @@ const nextConfig = {
 }
 
 // Only use custom distDir for local development on Windows/OneDrive
-if (process.env.NODE_ENV === 'development' && process.platform === 'win32') {
+// Use environment variable to control this behavior
+if (process.env.USE_CUSTOM_DIST_DIR === 'true') {
   nextConfig.distDir = '.next-build'
 }
 
