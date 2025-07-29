@@ -8,4 +8,9 @@ const nextConfig = {
   },
 }
 
+// Only use custom distDir for local development when explicitly enabled
+if (process.env.USE_CUSTOM_DIST_DIR === 'true') {
+  nextConfig.distDir = '.next-build'
+}
+
 export default nextConfig
