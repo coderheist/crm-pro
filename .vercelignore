@@ -1,0 +1,23 @@
+# Build directories
+.next-build
+.next-dev
+
+# Development files
+*.log
+*.tsbuildinfo
+
+# Environment files (will be set in Vercel dashboard)
+.env.local
+.env.development
+
+# IDE files
+.vscode
+.idea
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp

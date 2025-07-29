@@ -6,17 +6,9 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  images: {
-    unoptimized: true,
-  },
-  serverExternalPackages: ['mongodb'],
-  experimental: {
-    esmExternals: 'loose',
-  },
 }
 
 // Only use custom distDir for local development on Windows/OneDrive
-// Use environment variable to control this behavior
 if (process.env.USE_CUSTOM_DIST_DIR === 'true') {
   nextConfig.distDir = '.next-build'
 }
