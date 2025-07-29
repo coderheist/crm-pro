@@ -14,10 +14,11 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Only use custom distDir for local development on Windows/OneDrive
-  ...(process.env.NODE_ENV === 'development' && process.platform === 'win32' && {
-    distDir: '.next-build',
-  }),
+}
+
+// Only use custom distDir for local development on Windows/OneDrive
+if (process.env.NODE_ENV === 'development' && process.platform === 'win32') {
+  nextConfig.distDir = '.next-build'
 }
 
 export default nextConfig
