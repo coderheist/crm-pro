@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  serverExternalPackages: ['mongodb'],
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -9,6 +8,10 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
+  },
+  serverExternalPackages: ['mongodb'],
+  experimental: {
+    esmExternals: 'loose',
   },
 }
 
