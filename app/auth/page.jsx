@@ -7,17 +7,14 @@ import { useEffect } from "react"
 
 export default function Auth() {
   const router = useRouter()
-  const { user, needsOnboarding } = useAuth()
+  const { user } = useAuth()
 
   useEffect(() => {
     if (user) {
-      if (needsOnboarding) {
-        router.push("/onboarding")
-      } else {
-        router.push("/dashboard")
-      }
+      // Since we removed onboarding, always redirect to dashboard
+      router.push("/dashboard")
     }
-  }, [user, needsOnboarding, router])
+  }, [user, router])
 
   const handleBack = () => {
     router.push("/landing")

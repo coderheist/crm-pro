@@ -1,6 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  // Minimal configuration for maximum Vercel compatibility
-}
+const nextConfig = {}
 
 export default nextConfig
