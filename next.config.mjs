@@ -1,11 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  // Minimal configuration for maximum Vercel compatibility
 }
 
 export default nextConfig
