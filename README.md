@@ -14,9 +14,6 @@ A comprehensive Customer Relationship Management (CRM) system designed specifica
 
 ### User Roles
 - **Admin**: Full system access, user management, analytics, settings
-- **Marketing Manager**: Campaign management, segmentation, reporting
-- **Support Agent**: Ticket handling, customer support, chat management
-- **Viewer**: Read-only dashboard access
 
 ## 🛠️ Technology Stack
 
