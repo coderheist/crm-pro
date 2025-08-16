@@ -154,9 +154,6 @@ The project includes a `.env.local` file with the following variables:
 The system implements comprehensive role-based access:
 
 - **Admin**: Access to all modules including user management
-- **Marketing Manager**: Marketing, analytics, and customer data
-- **Support Agent**: Support tickets, customer profiles, and orders
-- **Viewer**: Read-only access to dashboard and reports
 
 ### Mobile Responsiveness
 - Fully responsive design for desktop, tablet, and mobile
