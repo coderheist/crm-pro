@@ -17,8 +17,8 @@ A comprehensive Customer Relationship Management (CRM) system designed specifica
 
 ## 🛠️ Technology Stack
 
-- **Frontend**: React.js (JavaScript), Next.js App Router
-- **Backend**: Node.js/Express (API routes and server actions)
+- **Frontend**: Next.js App Router
+- **Backend**: Next.js SSR
 - **Database**: MongoDB (live data operations)
 - **UI Components**: shadcn/ui, Tailwind CSS
 - **Charts**: Recharts for analytics visualization
