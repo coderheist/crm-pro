@@ -38,14 +38,22 @@ A comprehensive Customer Relationship Management (CRM) system designed specifica
    \`\`\`
 
 3. **Set up environment variables**
-   The `.env.local` file is already included with the following variables:
+   Create a `.env.local` file with the following variables:
    \`\`\`env
-   MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/ecommerce_crm?retryWrites=true&w=majority
+   MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/ecommerce_crm?retryWrites=true&w=majority
    JWT_SECRET=your-super-secret-jwt-key-here-make-it-long-and-random-123456789
    NEXT_PUBLIC_APP_URL=http://localhost:3000
+   
+   # Firebase Configuration (for Google Authentication)
+   NEXT_PUBLIC_FIREBASE_API_KEY=your_firebase_api_key
+   NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+   NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+   NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_project_id.appspot.com
+   NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+   NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
    \`\`\`
    
-   **Important**: Replace the MongoDB URI with your actual MongoDB connection string.
+   **Important**: Replace the MongoDB URI and Firebase configuration with your actual credentials.
 
 4. **Run the development server**
    \`\`\`bash
